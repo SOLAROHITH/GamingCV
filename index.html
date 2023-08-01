@@ -1,94 +1,246 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>SOLA ROHITH</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLA HEM ROHITH - Resume</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+
+    <style>
+ /* Reset default margins and paddings */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #EDE4FF;
+    color: #333;
+}
+
+/* Custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Resume layout */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ACFADF;
+    box-shadow: 0 10px 10px rgba(255, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Add a subtle hover effect on sections */
+section:hover {
+    transform: translateY(-10px);
+}
+
+/* Profile section */
+section h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #394553;
+}
+
+section img {
+    display: block;
+    max-width: 150px;
+    margin: 10px auto;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Add a subtle hover effect on profile image */
+section img:hover {
+    transform: scale(1.1);
+}
+
+/* Education, Skills, Courses, Language, and Extra-Curricular Activities sections */
+section h2 + p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style: none;
+    margin-left: 20px;
+}
+
+section li {
+    margin-bottom: 5px;
+}
+
+/* Details section */
+
+
+section.details {
+    background-color: #f9f9f9;
+    padding: 30px;
+}
+
+section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2e4054;
+    text-transform: uppercase;
+}
+
+/* Additional styles for links */
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Add a subtle hover effect on links */
+a:hover {
+    transform: translateY(-2px);
+}
+
+/* Add some fancy styles to the headings */
+h1, h2 {
+    position: relative;
+}
+
+h1::after, h2::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #3e556e;
+}
+
+/* Add an animation to the headings' underline on hover */
+h1:hover::after, h2:hover::after {
+    animation: underline 0.3s ease;
+}
+
+@keyframes underline {
+    0% {
+        width: 50px;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/* Additional animations for details section */
+section.details p {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+section.details:hover p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+section.details ul li {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+section.details:hover ul li {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+    </style>
 </head>
-
 <body>
-  <table cellspacing="20">
-    <tr>
-      <td><img src="https://media-exp1.licdn.com/dms/image/C5603AQFpWLGuZsFBOw/profile-displayphoto-shrink_800_800/0/1652390404083?e=2147483647&v=beta&t=rLaLwyXf0WazClH7ianfw1zA-XoO0TRLJn4L_W7Z18s" width="200px" height="200px" title="SOLA ROHITH"
-          alt="SOLA ROHITH PROFILE PIC"></td>
-      <td>
-        <h1>SOLA ROHITH</h1>
+    <!-- Details -->
+    <section>
+        <img src="https://media.licdn.com/dms/image/D5603AQFw1XkJuLFHVg/profile-displayphoto-shrink_400_400/0/1679260192121?e=1696464000&v=beta&t=eIHLWlTGTDa1_CLW1nQBXHbEkbUqWJ93RteN0BJ2kLw" alt="Your Profile Picture" width="150">
+
+        <h1>SOLA HEM ROHITH</h1>
+        <p>India</p>
+        <p>Email: solarohith2192003@gmail.com</p>
+        <p>Phone: +91 9014127120</p>
+    </section>
+
+    <!-- Profile -->
+    <section>
+        <h2>PROFILE</h2>
         <p>
-          <em>GAMER AND <strong>EDITOR</strong></em>
-        </p>
-        <p>Hey there! I like playing videogames</p>
-      </td>
-    </tr>
-  </table>
+            Enthusiastic College Student working towards a B.Tech with Specialization in AI/ML. <br>
+            Efficiency with an ability to quickly learn and navigate any computer software program, or office filing system.         </p>
+    </section>
 
+    <!-- Education -->
+    <section>
+        <h2>EDUCATION</h2>
+        <p><strong>B.Tech with Specialization in Artificial Intelligence and Machine Learning, VIT-AP</strong></p>
+        <p>Graduation Year: Dec,2021 - Jul,2025</p>
+    </section>
 
-  <hr size="3" noshade>
-  <h3>
-    GAMES
-  </h3>
-  <ul>
-    <li>Fortnite<ul>
-        <li>SINCE CH2S3</li>
-      </ul>
-    </li>
-    <li>
-      GTA V
-    </li>
-  </ul>
-    <hr size="3" noshade>
-  <h3>
-    SKILLS
-  </h3>
-  <ol>
-    <li>BOX FIGHTS</li>
-    <li>TRIPLE EDITS</li>
-  </ol>
-    <hr size="3" noshade>
-  <table border="1">
-    <thead>
-      <em>
-        <th>MOVIES</th>
-        <th>DATE</th>
-      </em>
-    </thead>
-    <tbody>
-      <tr>
-        <td>SPIDERMAN NO WAY HOME</td>
-        <td>2021</td>
-      </tr>
-      <tr>
-        <td>AVENGERS ENDGAME</td>
-        <td>2019</td>
-      </tr>
+    <!-- Skills -->
+    <section>
+        <h2>SKILLS</h2>
+        <ul>
+            <h3 >Computer Skills</h3>
+            <h3>Web Developement</h3>
+            <h3>Python</h3>
+            <h3>C Programming</h3>
+            <h3>Java Programming</h3>
+            <h3>Ability to Work in a Team</h3>
+            <h3>Ability to Learn Quickly</h3>
+            <h3>Effective Time Management</h3>
+            <h3>Adobe Premiere Pro</h3>
+            <h3 >Adobe Photoshop</h3>
+            <h3 >Adobe After Effects</h3>
+            <!-- Add more skills as needed -->
+        </ul>
+    </section>
 
-    </tbody>
+    <!-- Courses -->
+    <section>
+        <h2>COURSES</h2>
+        <ul>
+            <h3>Full Stack Developement at Udemy</h3>
+            <h3>Deep Learning at Freecodecamp.org</h3>
+            
+            <!-- Add more courses as needed -->
+        </ul>
+    </section>
 
-  </table>
-    <hr size="3" noshade>
-  <h3>SKILLS</h3>
-  <table  cellspacing="10">
-    <tr>
-      <td>GAMING</td>
-      <td>⭐⭐⭐⭐⭐</td>
-    </tr>
-    <tr>
-      <td>ART</td>
-      <td>⭐⭐⭐⭐</td>
-    </tr>
-  </table>
+    <!-- Language -->
+    <section>
+        <h2>LANGUAGES</h2>
+        <ul>
+            <h3>English</h3>
+           
+            <!-- Add more languages as needed -->
+        </ul>
+    </section>
 
-  <hr size="3" noshade>
-
-
-  <h3>SOCIALS</h3>
-  <ul>
-    <li><a href="https://www.instagram.com/solarohith/">INSTAGRAM</a>
-    </li>
-  </ul>
-  <strong><a href="contact_me.html">CONTACT</a></strong>
-  
-
+    <!-- Extra-Curricular Activities -->
+    <section>
+        <h2>EXTRA-CURRICULAR ACTIVITES</h2>
+        <ul>
+            <h3>Video Editor, Social Media Committee, VIT-AP</h3>
+            <h3>Video Editor,VIT-AP <br></h3>
+            <li>Worked as the core Video Editor for VITOPIA and VTAPP events at VIT-AP</li>
+            <!-- Add more activities as needed -->
+        </ul>
+    </section>
 
 </body>
-
 </html>
